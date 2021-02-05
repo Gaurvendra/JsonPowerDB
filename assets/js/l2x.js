@@ -53,20 +53,20 @@ $("#name").focus();
             return JSON.stringify(jsonStrObj);
         }
 
-        function registerCandidate() {
+          function registerCandidate() {
 
             var jsonStr = validateAndGetFormData();
             if (jsonStr === "") {
                 return;
             }
             var putReqStr = createPUTRequest("90935515|-31948800453178663|90931496",
-                    jsonStr, "Data", "MessageNew");
+                    jsonStr, "Data", "MessageNewgdfg");
            
             jQuery.ajaxSetup({async: false});
             var resultObj = executeCommand(putReqStr,
-                    "http://api.login2explore.com:5577", "/api/iml");
+                    "http://api.login2explore.com:5577", "/api/irl");
             jQuery.ajaxSetup({async: true});
-            alert(JSON.stringify(resultObj));
+            alert(resultObj.message + " Status :- " + resultObj.status );
             resetForm();  
 
         }
