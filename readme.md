@@ -1,7 +1,7 @@
 # JsonPowerDB 
 [Documentation Link](http://login2explore.com/jpdb/docs.html)
 
-## "This project is to send message/query/feedback using JPDB." 
+## "This project is to send and store message/query/feedback using JPDB." 
 
 ### About JsonPowerDB:
 
